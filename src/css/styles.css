@@ -130,7 +130,7 @@ h3 {
 
 .main-content__gallery-div {
   text-align: center;
-  background-image: url("/images/placeholder.png");
+  background-image: url("/src/images/placeholder.png");
   background-size: cover;
   color: #31304d;
   background-repeat: no-repeat;
@@ -138,7 +138,9 @@ h3 {
   height: 200px;
   justify-content: center;
 }
-
+.main-content__goals {
+  border-radius: 10px;
+}
 .main-content__goals-list {
   list-style-type: none;
   color: #b6bbc4;
@@ -348,7 +350,7 @@ img[src="images/caret-right_3916970.png"] {
   width: 60%;
 }
 .nav-parent__section {
-  background-image: url("/images/placeholder.png");
+  background-image: url("/src/images/placeholder.png");
   background-image: cover;
   border-radius: 10px;
 }
