@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <header>
-        <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
+    <header class="header">
+        <svg class="header__logo" width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(0 130) scale(.1 -.1)">
                 <path
                     d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
@@ -41,38 +41,38 @@
             </g>
         </svg>
 
-        <nav>
-            <i id="nav-button" class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
+        <nav class="nav">
+            <i id="nav-button" class="fa-solid fa-bars nav__icon"></i>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="Home.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="Portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="AboutMe.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Gallery.html" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-container">
-        <div id="largest-div">
+    <main class="container main-container-contact">
+        <div class="main-container__largest-div">
             <!-- Contact Infos -->
-            <div id="outer-div">
-                <div class="inner-divs">
-                    <i class="fa-solid fa-phone"></i>
-                    <p class="contact">Phone me 0979816275</p>
+            <div class="main-container__outer-div">
+                <div class="main-container__inner-divs">
+                    <i class="inner__medias fa-solid fa-phone"></i>
+                    <p class="main-container__contact">Phone me 0979816275</p>
                 </div>
-                <div class="inner-divs">
-                    <i class="fa-solid fa-envelope-circle-check"></i>
-                    <p class="contact">Contact me through Email</p>
+                <div class="main-container__inner-divs">
+                    <i class="inner__medias fa-solid fa-envelope-circle-check"></i>
+                    <p class="main-container__contact">Contact me through Email</p>
                 </div>
-                <div class="inner-divs">
-                    <i class="fa-solid fa-address-card"></i>
-                    <p class="contact">Addis Ababa, Ethiopia</p>
+                <div class="main-container__inner-divs">
+                    <i class="inner__medias fa-solid fa-address-card"></i>
+                    <p class="main-container__contact">Addis Ababa, Ethiopia</p>
                 </div>
             </div>
             <!-- Vertical line -->
-            <div class="vertical-line-contact" style="color:darkblue"></div>
+            <div class="main-container__vertical-line-contact"></div>
             <!-- Form -->
-            <div class="form-div">
+            <div class="main-container__form-div">
                 <form action="#" method="post">
                     <br> <br> <br>
                     <label for="name">Name:</label>
@@ -86,30 +86,29 @@
                 </form>
             </div>
         </div>
-        <hr />
+        <hr class="horizontal--line"/>
         <!-- Text area -->
         <section>
-
-            <label for="message">Leave your suggestion:</label> <br>
-            <textarea id="message" name="message" rows="4" cols="45" required></textarea>
+            <label class="message-label" for="message">Leave your suggestion:</label> <br>
+            <textarea id="message--edit" name="message" rows="5" required></textarea>
             <br>
-            <button class="submit-button" type="submit">Submit</button>
+            <button class="main-container__submit-button" type="submit">Submit</button>
         </section>
-        <hr />
-        <div id="socials">
-            <p class="none">Contact me through social medias</p>
-            <div id="medias">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-discord"></i>
-                <i class="fa-brands fa-telegram"></i>
-                <i class="fa-brands fa-twitter"></i>
+        <hr class="horizontal--line horizontal--line--none"/>
+        <div class="main-container__socials">
+            <p class="main-container__none">Contact me through social medias</p>
+            <div class="main-container__medias">
+                <a class="media--links" target="_blank" href="https://t.me/nata_nim"><i class="fa-brands i-font fa-linkedin"></i></a>
+                <a class="media--links" target="_blank" href="https://t.me/nata_nim"><i class="fa-brands i-font fa-discord"></i></a>
+                <a class="media--links" target="_blank" href="https://t.me/nata_nim"><i class="fa-brands i-font fa-telegram"></i></a>
+                <a class="media--links" target="_blank" href="https://t.me/nata_nim"><i class="fa-brands i-font fa-twitter"></i></a>
             </div>
-            <p class="none">Stay in touch😉</p>
+            <p class="main-container__none">Stay in touch😉</p>
         </div>
     </main>
+    <footer class="footer">
+        <small>Natanim Kemal | 2023</small>
+    </foote>
 </body>
-<footer>
-    <small>Natanim Kemal | 2023</small>
-</footer>
 
 </html>

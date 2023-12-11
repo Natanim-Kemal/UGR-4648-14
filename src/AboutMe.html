@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header>
-        <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
+    <header class="header">
+        <svg class="header__logo" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(0 130) scale(.1 -.1)">
                 <path
                     d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
@@ -40,59 +40,86 @@
             </g>
         </svg>
         <nav class="nav">
-            <i id="nav-button" class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
+            <i id="nav-button" class="fa-solid fa-bars nav__icon"></i>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="Home.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="Portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="AboutMe.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Gallery.html" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-content">
-        <img class="about-img" src="images/placeholder.png" alt="my-image">
-        <section class="journey">
-            <h2>My Journey</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi aperiam officiis ad facere consequatur
-                ipsa modi magnam sed cumque voluptatum inventore error maiores praesentium porro, velit quisquam placeat
-                fugiat voluptates.
-                Consectetur natus vero, odio cumque architecto non sed! Dolorem doloremque illo illum ad voluptate
-                incidunt nihil tempora, tempore maxime, minima natus delectus aut sed inventore autem numquam nisi
-                doloribus molestiae.
-                Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore alias
-                Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore alias
-                Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore alias
-                perspiciatis laborum corporis nesciunt? Rerum cupiditate vel temporibus quo sequi doloribus? Mollitia,
-                nulla. Fugit, magni.</p>
-        </section>
-        <hr>
-        <div class="hobby-container">
-            <section class="hobbies">
-                <h2>My Hobbies</h2>
-                <h4>Relatables</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio perspiciatis deleniti, facilis,
-                    quod temporibus neque itaque, dolorem quisquam et ex voluptatibus veniam! Explicabo labore ipsa
-                    veritatis laboriosam eum fugit asperiores.</p>
+    <main class="container main-content-about">
+        <figure>
+            <img class="main-content__about-img" src="images/placeholder.png" alt="my-image">
+            <figcaption class="about-img-caption"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+            </figcaption>
+        </figure>
+        <div class="main-container-lg">
+            <section class="main-contents main-content__journey">
+                <h2 class="main-content__title">My Journey</h2>
+                <p class="main-content__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi aperiam officiis ad facere
+                    consequatur
+                    ipsa modi magnam sed cumque voluptatum inventore error maiores praesentium porro, velit quisquam
+                    placeat
+                    fugiat voluptates.
+                    Consectetur natus vero, odio cumque architecto non sed! Dolorem doloremque illo illum ad voluptate
+                    incidunt nihil tempora, tempore maxime, minima natus delectus aut sed inventore autem numquam nisi
+                    doloribus molestiae.
+                    Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore
+                    alias
+                    Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore
+                    alias
+                    Eligendi porro, fuga illum harum quam minus numquam autem, quaerat vel asperiores odit inventore
+                    alias
+                    perspiciatis laborum corporis nesciunt? Rerum cupiditate vel temporibus quo sequi doloribus?
+                    Mollitia,
+                    nulla. Fugit, magni
+                </p>
             </section>
-            <hr>
-            <section class="goals">
-                <h2>My Goals</h2>
-                <ul>
-                    <li>lorem ng ideas into tangible succes. Explore </li>
-                    <li>lorem ng ideas into tangible succes. Explore </li>
-                    <li>lorem ng ideas into tangible succes. Explore </li>
-                    <li>lorem ng ideas into tangible succes. Explore </li>
-                </ul>
-            </section>
+            <hr class="horizontal--line horizontal--line--none">
+            <div class="main-contents main-content__hobby-container">
+                <section class="main-content__hobbies">
+                    <h2 class="main-content__title">Hobbies</h2>
+                    <h4 class="main-content__subtitle">Relatables</h4>
+                    <p class="main-content__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio perspiciatis deleniti, facilis,
+                        quod temporibus neque itaque, dolorem quisquam et ex voluptatibus veniam! Explicabo labore ipsa
+                        veritatis laboriosam eum fugit asperiores
+                    </p>
+                </section>
+                <hr class=" horizontal--line horizontal--line--none">
+                <section class="main-content__goals">
+                    <h2 class="main-content__title">Goals</h2>
+                    <ul class="main-content__goals-list">
+                        <li>lorem ng ideas into tangible succe</li>
+                        <li>lorem ng ideas into tangible succes. Explore </li>
+                        <li>lorem ng ideas into tangible succes </li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes. Explore </li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes. Explore </li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes.</li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes</li>
+                        <li>lorem ng ideas into tangible succes. Explore </li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <div class="gallery-div">
-            <h2>My Gallery</h2>
-            <a href="Gallery.html"><button class="gallery-button" type="button">*_*</button></a>
+        <div class="main-content__gallery-div">
+            <h2 class="main-content__title title--gallery">My Gallery</h2>
+            <a href="Gallery.html" class="main-content__gallery-button-link">
+                <button class="main-content__gallery-button" type="button">*_*</button>
+            </a>
         </div>
     </main>
-    <footer>
-        <small>Natanim Kemal | 2023</small>
+    <footer class="footer">
+        <small class="footer__copyright">Natanim Kemal | 2023</small>
     </footer>
 </body>
 

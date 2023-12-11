@@ -13,13 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> 
     <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
+    <header class="header">
+        <svg class="header__logo" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(0 130) scale(.1 -.1)">
                 <path
                     d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
@@ -42,51 +42,55 @@
                     d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
             </g>
         </svg>
-        <nav>
-            <i id="nav-button" class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="AboutMe.html">About me</a></li>
+        <nav class="nav">
+            <i id="nav-button" class="fa-solid fa-bars nav__icon"></i>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="Home.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="Portfolio.html" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="AboutMe.html" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="Gallery.html" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <article class="article-1">
-            <img id="img" src="images/profile-placeholder.png" alt="my-photo">
-            <div class="intro-div">
-                <h2>Hey there,</h2>
-                <h3>I am <span>Natanim Kemal</span></h3>
-                <p>Third-year Software Engineering student at Addis Ababa University, Ethiopia.</p>
+        </header>
+        <main class="container main-content-home">
+            <article class="article-1">
+                <img class="article-1__image" src="images/profile.jpg" alt="my-photo">
+                <div class="article-1__content">
+                    <h2 class="article-1__title">Hey there,</h2>
+                    <h3 class="article-1__subtitle">I am <span class="article-1__name">Natanim Kemal</span></h3>
+                    <p class="article-1__description">Third-year Software Engineering student at Addis Ababa University,
+                        Ethiopia.</p>
+                </div>
+            </article>
+            <hr class="horizontal--line">
+            <div class="nav-parent">
+                <!-- Vertical line -->
+                <div class="nav-parent__line"></div>
+                <!-- Navigation section -->
+                <div id="nav-div" class="nav-parent__navigation">
+                    <section class="nav-parent__section about">
+                        <h1 class="nav-parent__title">About me</h1>
+                        <a href="AboutMe.html" class="nav-parent__link"><img src="images/caret-right_3916970.png"
+                                alt="forward-icon"></a>
+                    </section>
+                    <section class="nav-parent__section portfolio">
+                        <h1 class="nav-parent__title">Portfolio</h1>
+                        <a href="Portfolio.html" class="nav-parent__link"><img src="images/caret-right_3916970.png"
+                                alt="forward-icon"></a>
+                    </section>
+                    <section class="nav-parent__section contact">
+                        <h1 class="nav-parent__title">Contact</h1>
+                        <a href="Contact.html" class="nav-parent__link"><img src="images/caret-right_3916970.png"
+                                alt="forward-icon"></a>
+                    </section>
+                </div>
             </div>
-        </article>
-        <hr>
-        <div class="nav-parent">
-            <!-- Vertical line -->
-            <div class="vertical-line-home">
-            </div>
-            <!-- Navigation section -->
-            <div id="nav-div">
-                <section class="about">
-                    <h1>About me</h1>
-                    <a href="AboutMe.html"><img src="images/caret-right_3916970.png" alt="forward-icon"></a>
-                </section>
-                <section class="portfolio">
-                    <h1>Portfolio</h1>
-                    <a href="Portfolio.html"><img src="images/caret-right_3916970.png" alt="forward-icon"></a>
-                </section>
-                <section class="contact">
-                    <h1>Contact</h1>
-                    <a href="Contact.html"><img src="images/caret-right_3916970.png" alt="forward-icon"></a>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <small>Natanim Kemal | Dec, 2023</small>
-    </footer>
+        </main>
+        <footer class="footer">
+            <small class="footer__copyright">Natanim Kemal | Dec, 2023</small>
+        </footer>
+
 </body>
 
 </html>
