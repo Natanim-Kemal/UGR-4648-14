@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="author" content="Natanim Kemal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
     <link rel="icon" type="image/png" href="images/gallery.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <picture>
-            <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
+<body class="flex flex-col items-center">
+    <header class="header w-full bg-blue-500">
+        <div class="container flex justify-between items-center">
+            <svg height="85" width="35%" class="md:py-2" version="1.0" viewBox="0 0 361 130"
+                xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(0 130) scale(.1 -.1)">
                     <path
                         d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
@@ -37,79 +45,89 @@
                         d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
                 </g>
             </svg>
-        </picture>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
-            </ul>
-        </nav>
+            <nav class="hidden lg:flex items-center text-2xl mr-4 space-x-16">
+                <a href="Home.html">Home</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <hgroup>
-                <h1>My Gallery</h1>
-                <h2>Thoughts and Memories</h2>
-            </hgroup>
-            <article class="article-1">
-                <video controls class="video-1" src=""></video>
-                <p><em>Jim Rohn</em> is one of the best I know on social media. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Harum et voluptates expedita quisquam! Adipisci maxime at, earum, omnis dolorem
-                    veritatis, error consequatur cum dolore quis nulla. Commodi, voluptatem. Iste, nemo?*3</p>
-            </article>
-            <article class="article-2">
-                <video controls class="video-2" src=""></video>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eveniet minus magni enim deleniti
-                    atque dignissimoe provident dolorum consequatur.
-                    At corporis dolorem, libero explicabo necessitatibus illum eligendi, hic quibusdam repellendus
-                    similique, sunt earum aliquid harum nisi rerum? Unde dolorem sapiente excepturi quia facilis sed
-                    fuga nulla eligendi, corporis et!</p>
-            </article>
+    <main class="container mx-auto mt-20 mb-10 px-5">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold mb-5">My Gallery</h1>
+            <h3 class="text-xl font-bold">Thoughts and Memories</h3>
+            <section class="lg:flex">
+                <article class="flex items-center mt-10">
+                    <video controls class="mr-5 w-40  md:w-full"
+                        src="https://youtu.be/nhE3luyPN0c?si=R_guQ6p4sW1gfR2D"></video>
+                    <p><em>Jim Rohn</em> is one of the best I know on social media. Lorem, ipsum dolor
+                        sit modi, voluptatem. Iste, nemo.</p>
+                </article>
+                <article class="flex items-center mt-10">
+                    <p>Lorem ipsurepeldus similique, sunt earum aliquid harum nisi rerum? Unde dolorem
+                        sapiente excepturi quia facilis ses et!</p>
+                    <video controls class="ml-5 w-40 md:w-full" src=""></video>
+                </article>
+            </section>
         </section>
-        <hr>
-
-        <section id="">
-            <div class="books">
-                <h2>Books</h2>
-                <ol>
-                    <li><b>The Chimp Paradox</b><author></author></li>
-                    <li><b>Focus</b></li>
-                    <li><b>The 5 Second Rule</b></li>
-                    <li><b>Eat That Frog</b></li>
-                </ol>
-            </div>
-            <div>
-                <h2>Favourite Quotes</h2>
-                <ul>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
+        <div class="flex justify-center items-center">
+            <hr class="w-60 border-blue-700 my-20">
+        </div>
+        <section>
+            <div class="bg-gray-200 p-10 rounded lg:w-1/2">
+                <h2 class="text-xl font-bold mb-5">Books</h2>
+                <ul class="list-square pl-8">
+                    <li>The Chimp Paradox</li>
+                    <li>Focus</li>
+                    <li>The 5 Second Rule</li>
+                    <li>Eat That Frog</li>
                 </ul>
             </div>
-        </section>
-        <p class="center-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates optio doloremque
-            quod eum architectos.
-            Impedit unde vel incidunt similique alias voluptates a necessitatibus in, laudantium ratione, voluptate
-            molestias blanditiis consequatur nulla doloribus error. Tenetur ipsum deserunt cum quod</p>
-
-            <div class="last-image">
-                <img src="images/Focus.jfif" width="20%" alt="book-cover">
-                <img src="images/5 seconds.jfif" width="20%" alt="book-cover">
-                <img src="images/Eat that frog.jfif" width="20%" alt="book-cover">
+            <div class="bg-gray-200 rounded p-10 mt-10">
+                <h2 class="text-xl font-bold mb-5">Favourite Quotes</h2>
+                <ul>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus .
+                            Enim</q></li>
+                    <li><q>Lorem ipsum, dolor <span>sit amet consectetrumlor sit</span> amet <span></span> ectetrum
+                            fugit
+                            sit in quos magni, itaque voluptatibus . Enim</q></li>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
+                            Enim!</q></li>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugitamet consectetrum fugit sit in quos magni,
+                            itaque
+                            voluptatibus Enim!!!</q></li>
+                </ul>
             </div>
+            <div class="flex justify-center items-center">
+                <hr class="w-60 border-blue-700 my-20">
+            </div>
+        </section>
+        <p>Engaging with the written word, both as a reader and a writer, is a transformative journey that transcends
+            the boundaries of time and space. As a devoted reader, immersing oneself in the pages of a book is akin to
+            embarking on a literary adventure, where the mind traverses landscapes, encounters diverse characters, and
+            delves into the complexities of the human experience. The act of reading is not merely an escape but a
+            profound exploration that nurtures empathy, broadens perspectives, and stimulates intellectual
+            curiosity.Conversely, the transition from avid reader to aspiring writer is a natural evolution fueled by a
+            desire to contribute one's voice to the rich tapestry of literature. Writing becomes a medium for
+            self-expression, a vessel for channeling creativity and imagination onto the blank canvas of a page. Whether
+            penning fiction that transports readers to fantastical realms or crafting non-fiction that explores the
+            intricacies of the world, the writer's journey is an intimate process of self-discovery and communication.
+
+            Both reading and writing, intertwined as
+            essential elements of the literary ecosystem, shape individuals, foster a love for language, and contribute
+            to the perpetuity of human knowledge and creativity. Whether one finds solace in the written words of others
+            or endeavors to create new narratives, the journey of literature is a lifelong odyssey that enriches the
+            soul and leaves an indelible mark on the human spirit.</p>
+        <div class="flex justify-around mt-10">
+            <img src="images/Focus.jfif" width="20%" alt="book-cover">
+            <img src="images/5 seconds.jfif" width="20%" alt="book-cover">
+            <img src="images/Eat that frog.jfif" width="20%" alt="book-cover">
+        </div>
     </main>
-    <footer>
-        <small>Natanim Kemal | 2023</small>
+    <footer class="text-center w-full bg-gray-800 py-2">
+        <small class="text-white">&copy;Natanim Kemal | Dec, 2023</small>
     </footer>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-montserrat">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/output.css">
 </head>
 
 <body>
-    <header>
-        <picture>
-            <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
+
+    <header class="header rounded w-full bg-blue-500">
+        <div class="container flex justify-between items-center">
+            <svg height="85" width="35%" class="lg:py-2" version="1.0" viewBox="0 0 361 130"
+                xmlns="http://www.w3.org/2000/svg">
                 <g transform="translate(0 130) scale(.1 -.1)">
                     <path
                         d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
@@ -29,7 +32,7 @@
                     <path
                         d="m1780 201v-121h120 120v121 120l-45-33c-25-18-52-37-59-42-10-7-27-1-56 20-90 64-80 72-80-65z" />
                     <path
-                        d="m2630 201v-121h355 355v60 60h-30c-30 0-30    1-30 55v55h-60-59l-3-112-3-113-68 118c-38 64-72 117-76 117s-38-53-76-117l-70-118-3 117-3 118-50-40c-58-46-65-47-99-19-14 11-37 29-52 40l-28 20v-120z" />
+                        d="m2630 201v-121h355 355v60 60h-30c-30 0-30 1-30 55v55h-60-59l-3-112-3-113-68 118c-38 64-72 117-76 117s-38-53-76-117l-70-118-3 117-3 118-50-40c-58-46-65-47-99-19-14 11-37 29-52 40l-28 20v-120z" />
                     <path d="m360 196v-116h115 115v115 115h-60-60v-41-41l-42 34c-72 58-68 62-68-66z" />
                     <path
                         d="m882 253c3-54 5-58 26-55s22 0 22-57v-61h60 60v61c0 56 2 61 20 56s20 0 20 54v59h-105-106l3-57z" />
@@ -40,81 +43,104 @@
                         d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
                 </g>
             </svg>
-        </picture>
-        <div><i class="fa-solid fa-file-arrow-down"></i>
-            <small>Download Resume</small>
+            <div class="resume ml-28  flex flex-col items-center text-center relative right-20">
+                <i class="resume__download fas fa-file-arrow-down"></i>
+                <small class="resume__small">Download Resume</small>
+            </div>
+            <nav class="hidden lg:flex items-center text-2xl mr-4 space-x-16">
+                <a href="Home.html">Home</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+            <i id="nav-button" class="fas fa-bars md:text-2xl lg:hidden mr-6"></i>
+
         </div>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <hgroup>
-            <h1>Projects</h1>
-            <h4></h4>
-            <p>My portfolio reflects a journey of tackling challenges, collaborating with cross-functional teams, and
-                translating ideas into tangible successes. Explore my work to discover how I've leveraged various
-                developmet tools to create astonishing and measurable results.</p>
+
+    <main class="container mx-auto py-10 px-5">
+
+        <hgroup class="text-center">
+            <h1 class="text-4xl font-bold m-10">Projects</h1>
+            <p class="">My portfolio reflects a sample of journey of tackling challenges, collaborating
+                with cross-functional teams, and translating ideas into tangible successes. Explore my work to discover
+                how
+                I've leveraged various development tools to create astonishing and measurable results.</p>
         </hgroup>
+        <div class="flex justify-center my-10 mlg:hidden items-center">
+            <hr class="w-60 border-blue-500">
+        </div>
         <div>
-            <section class="finished">
-                <h1>01. Finished Projects</h1>
-                <div id="finished">
-                    <img src="" alt="projects-image">
-                    <video controls src=""></video>
-                    <img src="" alt="projects-image">
-                    <video controls src=""></video>
+            <section class="mb-10">
+                <h1 class="text-3xl font-bold my-8">01. Finished Projects</h1>
+                <div class="flex">
+                    <div class="lg:flex mr-4">
+                        <video controls class="w-40vw h-100px"></video>
+                        <a href="https://github.com"><img class="p-2 w-vw h-100px object-cover"
+                                src="images/placeholder.png" alt="projects-image"></a>
+                    </div>
+                    <div class="lg:flex mr-4">
+                        <a href="https://github.com"><img class="p-2 h-100px object-cover" src="images/placeholder.png"
+                                alt="projects-image"></a>
+                        <video controls class="w-40vw h-100px"></video>
+                    </div>
                 </div>
             </section>
-            <section class="ongoing">
-                <h1>02. Ongoing Projects</h1>
-                <div id="ongoing">
-                    <div class="ongoing-pro-1">
-                        <h2>Personal Website</h2>
-                        <p>Lorem ipsum dolor sit amet
-                            Quos architecto libero necsint reprehenderit quam fugit deleniti laborum ad quod praesentium
-                            ullam sunt dolore officia molestiae, id culpa iste tempore provident suscipit laudantium
-                            accusamus expedita sequi corporis. Iusto, totam!</p>
+            <div class="flex justify-center my-10 mlg:hidden items-center">
+                <hr class="w-60 border-blue-500">
+            </div>
+            <section class="project-section project-section--ongoing">
+                <h1 class="text-3xl font-bold py-10">02. Ongoing Projects</h1>
+                <div id="ongoing" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="ongoing-pro-1 project">
+                        <h2 class="text-xl font-bold mb-6">Finance Tracker Web Application</h2>
+                        <p>finance tracker serves as a centralized hub for users to monitor and analyze their income,
+                            expenses, and overall financial health. Users can categorize transactions, set personalized
+                            budgets, and receive real-time insights into their spending patterns. Overall, a finance
+                            tracker acts as a digital companion, promoting
+                            financial awareness, responsible budgeting, and long-term financial well-being. <a
+                                class="ongoing-projects-link text-blue-400"
+                                href="https://github.com/Natanim-Kemal/UGR-4648-14.git" target="_blank">Refer to my
+                                Github repo</a>
+                        </p>
                     </div>
-                    <div class="ongoing-pro-2">
-                        <h2>Personal Website</h2>
-                        <p>Lorem ipsum dolor sit amet
-                            Quos architecto libero necsint reprehenderit quam fugit deleniti laborum ad quod
-                            praesentium
-                            ullam sunt dolore officia molestiae, id culpa iste tempore provident suscipit laudantium
-                            accusamus expedita sequi corporis. Iusto, totam!</p>
+                    <div class="ongoing-pro-2 project ">
+                        <h2 class="text-xl font-bold mb-6">Personal Website</h2>This website is a reflection of who I
+                        am,
+                        what I'm passionate about, and the journey I'm on. Explore the different pages to discover
+                        various facets of my life and interests. From my academic pursuits to my professional endeavors,
+                        and a glimpse into my hobbies and aspirations, each page is a chapter that contributes to the
+                        story of my life. I hope you enjoy navigating through these digital pages and get to know me a
+                        little better. Feel free to reach out—I'd love to connect with you!
+                        <a class="text-blue-400" href="https://github.com/Natanim-Kemal/UGR-4648-14.git"
+                            target="_blank">Refer to my
+                            Github repo</a>
+                        </p>
                     </div>
-                    <div class="ongoing-pro-3">
-                        <h2>Personal Website</h2>
-                        <p>Lorem ipsum dolor sit amet
-                            Quos architecto libero necsint reprehenderit quam fugit deleniti laborum ad quod
-                            praesentium
-                            ullam sunt dolore officia molestiae, id culpa iste tempore provident suscipit
-                            laudantium
-                            accusamus expedita sequi corporis. Iusto, totam!</p>
-                    </div>
-                    <div class="ongoing-pro-4">
-                        <h2>Personal Website</h2>
-                        <p>Lorem ipsum dolor sit amet
-                            Quos architecto libero necsint reprehenderit quam fugit deleniti laborum ad quod
-                            praesentium
-                            ullam sunt dolore officia molestiae, id culpa iste tempore provident suscipit
-                            laudantium
-                            accusamus expedita sequi corporis. Iusto, totam!</p>
+                    <div class="ongoing-pro-3 project">
+                        <h2 class="text-xl font-bold ">CRUD App</h2>
+                        <p>Lorem ipsum dolor sit amet Quos architecto libero
+                            necsint reprehenderit quam fugit deleniti laborum ad quod praesentium ullam sunt dolore
+                            officia reprehenderit quam fugit deleniti laborum ad quod praesentium ullam sunt dolore
+                            officia molestiae, id culpa iste tempore provident expedita sequi corporis. Iusto, totam!
+                            <a class="ongoing-projects-link text-blue-400"
+                                href="https://github.com/Natanim-Kemal/UGR-4648-14.git" target="_blank">Refer to my
+                                Github repo</a>
+                        </p>
                     </div>
                 </div>
             </section>
         </div>
+
+        <div class="bg-gray-400 w-30% border-0 absolute right-1/2 transform translate-x-1/2"></div>
+
     </main>
-    <footer>
-        <small>Natanim Kemal | 2023</small>
+
+    <footer class="text-center text-white bg-gray-800 rounded-t-lg py-2">
+        <small>&copy;Natanim Kemal | 2023</small>
     </footer>
+
 </body>
 
 </html>

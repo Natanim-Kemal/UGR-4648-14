@@ -5,81 +5,121 @@
     <meta charset="UTF-8">
     <meta name="author" content="Natanim Kemal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
     <link rel="icon" type="image/png" href="images/contact.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Contact</title>
 </head>
 
-<body>
-    <header>
-        <picture>
-            <img src="" alt="my-logo" width="100px" height="100px" />
-        </picture>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <!-- Contact Infos -->
-            <div>
-                <div>
-                    <i class="fav"></i>
-                    <p></p>
-                </div>
-                <div>
-                    <i></i>
-                    <p></p>
-                </div>
-                <div>
-                    <i></i>
-                    <p></p>
-                </div>
-            </div>
-            <!-- Vertical line -->
-            <div>
-            </div>
-            <!-- Form -->
-            <div>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </form>
-            </div>
+<body class=" flex flex-col justify-center items-center">
+    <header class="header w-full bg-blue-500">
+        <div class="container flex justify-between items-center mb-(-6)">
+            <svg height="85" width="35%" class="lg:py-4" version="1.0" viewBox="0 0 361 130"
+                xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(0 130) scale(.1 -.1)">
+                    <path
+                        d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
+                    <path d="m1832 858c3-315 5-363 18-363s15 48 18 363c2 358 2 362-18 362s-20-4-18-362z" />
+                    <path
+                        d="m1952 858 3-363 353-3c193-1 352 0 352 3s-61 86-135 184l-134 179 111 149c61 81 122 163 136 181l24 32h-356-356l2-362z" />
+                    <path
+                        d="m668 205c-38-63-68-117-68-120s65-5 144-5h145l-70 118c-38 64-73 118-77 119-4 2-37-49-74-112z" />
+                    <path
+                        d="m1168 205c-38-63-68-117-68-120s119-5 265-5h265v115 115h-59-60l-3-40-3-39-52 39c-28 22-54 40-57 40s-7-51-8-112l-3-113-69 118c-38 64-72 117-75 117s-36-52-73-115z" />
+                    <path
+                        d="m1780 201v-121h120 120v121 120l-45-33c-25-18-52-37-59-42-10-7-27-1-56 20-90 64-80 72-80-65z" />
+                    <path
+                        d="m2630 201v-121h355 355v60 60h-30c-30 0-30 1-30 55v55h-60-59l-3-112-3-113-68 118c-38 64-72 117-76 117s-38-53-76-117l-70-118-3 117-3 118-50-40c-58-46-65-47-99-19-14 11-37 29-52 40l-28 20v-120z" />
+                    <path d="m360 196v-116h115 115v115 115h-60-60v-41-41l-42 34c-72 58-68 62-68-66z" />
+                    <path
+                        d="m882 253c3-54 5-58 26-55s22 0 22-57v-61h60 60v61c0 56 2 61 20 56s20 0 20 54v59h-105-106l3-57z" />
+                    <path d="m1640 195v-115h65 65v115 115h-65-65v-115z" />
+                    <path
+                        d="m2170 195v-115h116c92 0 114 3 107 13-5 6-24 32-43 56-23 30-31 47-24 57 5 7 24 34 42 59l33 45h-115-116v-115z" />
+                    <path
+                        d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
+                </g>
+            </svg>
+            <nav class="hidden lg:flex items-center text-2xl mr-4 space-x-16">
+                <a href="Home.html">Home</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+            <i id="nav-button" class="fas fa-bars md:text-2xl lg:hidden mr-6"></i>
         </div>
-        <hr />
-        <!-- Text area -->
-        <section>
+    </header>
 
-            <label for="message">Leave your suggestion:</label> <br>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-            <button type="submit">Submit</button>
-        </section>
-        <hr />
-        <div>
-            <p>Contact me through social medias</p>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-discord"></i>
-            <i class="fa-brands fa-telegram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <p>Stay in touch😉</p>
+    <main class="container mx-auto my-10 px-5">
+        <div class="flex flex-col lg:flex-row md:my-10">
+            <!-- Contact Infos -->
+            <section class="flex md:my-8">
+                <div class="flex mx-auto pr-4 flex-col lg:p-10 md text-center">
+                    <div class="flex flex-col items-center py-2">
+                        <i class="fa-solid fa-phone text-2xl"></i>
+                        <p>Phone me 0979816275</p>
+                    </div>
+                    <div class="flex flex-col items-center py-2">
+                        <i class="fa-solid fa-envelope-circle-check text-2xl"></i>
+                        <p>Contact me through <a class="text-blue-600" href="mailto:nathanimkemal@gmail.com">Email</a>
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center py-2">
+                        <i class="fa-solid fa-address-card text-2xl"></i>
+                        <p>Addis Ababa, Ethiopia</p>
+                    </div>
+                </div>
+                <!-- Vertical line -->
+                <div class="border-l-2 border-blue-600 h-300"></div>
+                <!-- Form -->
+                <div class="space-y-4 px-2 lg:px-6 mx-auto flex items-center">
+                    <form class="flex flex-col" action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="enter your name" required
+                            class="border rounded px-3 py-2 bg-gray-200">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="enter your email" required
+                            class="border rounded px-3 py-2 bg-gray-200">
+                        <label for="address">Address:</label>
+                        <input type="address" id="address" placeholder="enter your address" required
+                            class="border rounded px-3 py-2 bg-gray-200">
+                    </form>
+                </div>
+            </section>
+            <div class="flex justify-center hidden mlg:block mt-10 items-center">
+                <hr class="w-60 border-blue-500">
+            </div>
+            <section class="space-y-4 lg:ml-10 mt-10 py-6 lg:w-full flex flex-col">
+                <!-- Text area -->
+                <label class="lg:w-60" for="message">Leave your suggestion:</label>
+                <textarea name="message" rows="5" required class="border h-64 px-3 py-2 bg-gray-200"></textarea>
+                <button class="bg-blue-500 text-white ml-auto w-20 px-4 py-2 rounded" type="submit">Submit</button>
+            </section>
+        </div>
+        <div class="flex justify-center mlg:hidden my-10 items-center">
+            <hr class="w-60 border-blue-500">
+        </div>
+        <div class="space-y-4 flex flex-col justify-centers bg-gray-200 p-6">
+            <p class="text-center">Contact me through social medias</p>
+            <div class="flex justify-around py-6 items-center">
+                <a target="_blank" href="#"><i class="fa-brands i-font fa-linkedin text-2xl"></i></a>
+                <a class="media--links" target="_blank" href="#"><i
+                        class="fa-brands i-font fa-discord text-2xl"></i></a>
+                <a class="media--links" target="_blank" href="https://t.me/nata_nim"><i
+                        class="fa-brands i-font fa-telegram text-2xl"></i></a>
+                <a target="_blank" href="https://x.com/Natty573508413?s=09"><i
+                        class="fa-brands i-font fa-twitter text-2xl"></i></a>
+            </div>
+            <p class="text-center">Stay in touch😉</p>
         </div>
     </main>
+    <footer class="text-center w-full bg-gray-800 py-2">
+        <small class="text-white">&copy;Natanim Kemal | Dec, 2023</small>
+    </footer>
 </body>
-<footer>
-    <small>Natanim Kemal | 2023</small>
-</footer>
 
 </html>
