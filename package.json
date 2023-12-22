@@ -1,12 +1,12 @@
 {
-  "name": "src",
+  "name": "ugr-4648-14",
   "version": "1.0.0",
-  "description": "",
+  "description": "tailwindcss",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Natanim Kemal",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
