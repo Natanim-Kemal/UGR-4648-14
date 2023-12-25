@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="author" content="Natanim Kemal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/home.ico">
-    <link rel="stylesheet" href="dist/css/all.min.css">
-    <link rel="stylesheet" href="dist/css/fontawesome.min.css">
+    <link rel="icon" href="images/about.ico">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <title>Home</title>
+    <title>About me</title>
+</head>
 </head>
 
-<body>
+<body class="d-flex flex-column justify-content-center items-center">
     <header class="bg-primary d-flex navbar-expand-lg">
         <div class="container-fluid container">
             <div class="row position-relative">
@@ -76,46 +75,71 @@
         </div>
     </header>
 
-    <main class="container">
-        <section class="d-lg-flex text-center article-1 py-10 bg-gray-300 m-10 rounded-md">
-            <img class="mt-5" src="images/profile.jpg" alt="my-photo">
-            <div class="w-full mt-5 items-center text-center p-10">
-                <h2 class="text-indigo-900 text-2xl font-bold">Hey there,</h2>
-                <h3 class="text-xl">I am <span class="font-bold text-indigo-900">Natanim Kemal</span>
-                </h3> <br>
-                <p>Third-year Software Engineering student at Addis Ababa University, Ethiopia.I am
-                    passionate software engineering student on a journey to explore the dynamic realm of technology
-                    with a keen interest in website development and problem solving.
+
+    <main class="container p-8 d-flex flex-column justify-content-center align-items-center">
+
+        <figure class="w-md-50 md-mr-8">
+            <img class="mt-8 w-100 mt-5" width="400" height="400" src="images/placeholder.png" alt="my-image">
+            <figcaption class="about-img-caption mb-3 text-center">Me in the hood.
+            </figcaption>
+        </figure>
+
+        <div class="d-flex border-primary justify-content-center align-items-center">
+            <hr class="m-5 ">
+        </div>
+
+        <div class="row pl-lg-2 justify-content-center md-space-x-8">
+            <section class="mb-8 col-lg-4">
+                <h2 class="text-2x1 mb-4 mt-8">My Journey</h2>
+                <p>
+                    I was born in Hawassa on <time datetime="2003-03-02">March 02, 2003</time>, my early years were
+                    adorned with cherished memories and
+                    shaped by a dynamic family structure. From navigating the corridors of education in schools like
+                    Cecilia Elementary School to overcoming challenges that sculpted my character, each page turned has
+                    been a
+                    testament to personal growth. Professionally, I've celebrated milestones, held key roles, and
+                    learned invaluable lessons, while relationships with family, friends, and mentors have provided
+                    profound insights. Acknowledging Addis Ababa University.</p>
+            </section>
+            <section class="pb-10 pr-2 col-lg-4 pl-lg-5">
+                <h2 class="text-2xl font-bold mb-4 mt-10">Hobbies</h2>
+                <h4 class="text-lg mb-2">Relatables</h4>
+                <p>
+                    Technology Exploration: Experimenting with new gadgets and technologies. <br>
+                    <hr>
+                    Hiking or Nature Walks: Exploring outdoor trails and nature. <br>
+                    <hr>
+                    Coding or Programming: Exploring computer programming and software development. <br>
+                    <hr>
+                    Gardening: Growing plants and maintaining a garden. <br>
+                    <hr>
+                    Sports: Playing or following sports like soccer, basketball, or tennis.
                 </p>
-            </div>
-        </section>
+            </section>
 
-        <hr class="m-5 border-blue-700 my-20 hidden lg:flex justify-center items-center">
+            <section class="col-lg-4 pl-lg-5">
+                <h2 class="text-2xl font-bold mt-8 mb-4">Goals</h2>
+                <ul>
+                    <li>Consider part-time employment or internships to gain work experience and supplement income.
+                    </li>
+                    <li>Develop effective communication skills, both written and verbal.</li>
+                    <li>Incorporate regular exercise into the routine.</li>
+                    <li>Volunteer for community service or outreach programs.</li>
+                    <li>Learn and acquire proficiency in a website development.</li>
+                    <li>Read a certain number of books or articles within the academic year.</li>
+                </ul>
+            </section>
+        </div>
 
-        <div class="text-indigo-900 flex justify-center items-center">
-            <div class="flex flex-col items-center justify-center text-center mr-30px nav-parent__navigation">
-                <div class="d-lg-flex justify-content-center">
-                    <section class="m-10 p-10 m-lg-5 p-lg-5 rounded">
-                        <h1 class="text-3xl font-bold">About me</h1>
-                        <a href="AboutMe.html"><img class="img-fluid" width="400" src="images/caret-right_3916970.png"
-                                alt="forward-icon"></a>
-                    </section>
-                    <section class="bg-gray-200 m-10 p-10 m-lg-5 p-lg-5 rounded">
-                        <h1 class="text-3xl font-bold">Portfolio</h1>
-                        <a href="Portfolio.html"><img class="img-fluid" width="400" src="images/caret-right_3916970.png"
-                                alt="forward-icon"></a>
-                    </section>
-                </div>
-                <section class="bg-gray-200 m-10 p-10 rounded">
-                    <h1 class="text-3xl font-bold">Contact</h1>
-                    <a href="Contact.html"><img class="img-fluid" width="400" src="images/caret-right_3916970.png"
-                            alt="forward-icon"></a>
-                </section>
-            </div>
+        <div class="d-flex rounded-3 flex-column p-5 align-items-center w-100 justify-content-center mt-8 bg-center h-60"
+            style="background-image:url('images/placeholder.png')">
+            <h2 class="text-2xl font-bold mb-4">My Gallery</h2>
+            <a href="Gallery.html">
+                <button class="btn btn-primary px-4 py-2 rounded">*_*</button>
+            </a>
         </div>
     </main>
-
-    <footer class="text-center w-full bg-dark py-2">
+    <footer class="text-center bg-dark py-2">
         <small class="text-white">&copy;Natanim Kemal | Dec, 2023</small>
     </footer>
 </body>

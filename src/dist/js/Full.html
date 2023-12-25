@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Preview Example</title>
+    <style>
+        /* Style for the image preview container */
+        #image-preview-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 80%;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        /* Style for the close button */
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Link to trigger image preview -->
+<a href="#" id="image-link">Preview Image</a>
+
+<!-- Image preview container -->
+<div id="image-preview-container">
+    <span id="close-button" onclick="closeImagePreview()">Close</span>
+    <img id="preview-image" src="" alt="Image Preview">
+</div>
+
+<!-- JavaScript to handle image preview -->
+<script>
+    // Function to open the image preview
+    function openImagePreview(imageURL) {
+        document.getElementById('preview-image').src = imageURL;
+        document.getElementById('image-preview-container').style.display = 'block';
+    }
+
+    // Function to close the image preview
+    function closeImagePreview() {
+        document.getElementById('image-preview-container').style.display = 'none';
+    }
+
+    // Event listener for the link
+    document.getElementById('image-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        openImagePreview('path/to/your/image.jpg'); // Replace with the actual path to your image
+    });
+</script>
+
+</body>
+</html>

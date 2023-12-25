@@ -5,112 +5,162 @@
     <meta charset="UTF-8">
     <meta name="author" content="Natanim Kemal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
     <link rel="icon" type="image/png" href="images/gallery.ico">
+    <link rel="stylesheet" href="dist/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/fontawesome.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <title>Gallery</title>
 </head>
 
-<body>
-    <header>
-        <picture>
-            <svg width="30%" height="2%" version="1.0" viewBox="0 0 361 130" xmlns="http://www.w3.org/2000/svg">
-                <g transform="translate(0 130) scale(.1 -.1)">
-                    <path
-                        d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
-                    <path d="m1832 858c3-315 5-363 18-363s15 48 18 363c2 358 2 362-18 362s-20-4-18-362z" />
-                    <path
-                        d="m1952 858 3-363 353-3c193-1 352 0 352 3s-61 86-135 184l-134 179 111 149c61 81 122 163 136 181l24 32h-356-356l2-362z" />
-                    <path
-                        d="m668 205c-38-63-68-117-68-120s65-5 144-5h145l-70 118c-38 64-73 118-77 119-4 2-37-49-74-112z" />
-                    <path
-                        d="m1168 205c-38-63-68-117-68-120s119-5 265-5h265v115 115h-59-60l-3-40-3-39-52 39c-28 22-54 40-57 40s-7-51-8-112l-3-113-69 118c-38 64-72 117-75 117s-36-52-73-115z" />
-                    <path
-                        d="m1780 201v-121h120 120v121 120l-45-33c-25-18-52-37-59-42-10-7-27-1-56 20-90 64-80 72-80-65z" />
-                    <path
-                        d="m2630 201v-121h355 355v60 60h-30c-30 0-30 1-30 55v55h-60-59l-3-112-3-113-68 118c-38 64-72 117-76 117s-38-53-76-117l-70-118-3 117-3 118-50-40c-58-46-65-47-99-19-14 11-37 29-52 40l-28 20v-120z" />
-                    <path d="m360 196v-116h115 115v115 115h-60-60v-41-41l-42 34c-72 58-68 62-68-66z" />
-                    <path
-                        d="m882 253c3-54 5-58 26-55s22 0 22-57v-61h60 60v61c0 56 2 61 20 56s20 0 20 54v59h-105-106l3-57z" />
-                    <path d="m1640 195v-115h65 65v115 115h-65-65v-115z" />
-                    <path
-                        d="m2170 195v-115h116c92 0 114 3 107 13-5 6-24 32-43 56-23 30-31 47-24 57 5 7 24 34 42 59l33 45h-115-116v-115z" />
-                    <path
-                        d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
-                </g>
-            </svg>
-        </picture>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About me.html">About me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <hgroup>
-                <h1>My Gallery</h1>
-                <h2>Thoughts and Memories</h2>
-            </hgroup>
-            <article class="article-1">
-                <video controls class="video-1" src=""></video>
-                <p><em>Jim Rohn</em> is one of the best I know on social media. Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Harum et voluptates expedita quisquam! Adipisci maxime at, earum, omnis dolorem
-                    veritatis, error consequatur cum dolore quis nulla. Commodi, voluptatem. Iste, nemo?*3</p>
-            </article>
-            <article class="article-2">
-                <video controls class="video-2" src=""></video>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eveniet minus magni enim deleniti
-                    atque dignissimoe provident dolorum consequatur.
-                    At corporis dolorem, libero explicabo necessitatibus illum eligendi, hic quibusdam repellendus
-                    similique, sunt earum aliquid harum nisi rerum? Unde dolorem sapiente excepturi quia facilis sed
-                    fuga nulla eligendi, corporis et!</p>
-            </article>
-        </section>
-        <hr>
-
-        <section id="">
-            <div class="books">
-                <h2>Books</h2>
-                <ol>
-                    <li><b>The Chimp Paradox</b><author></author></li>
-                    <li><b>Focus</b></li>
-                    <li><b>The 5 Second Rule</b></li>
-                    <li><b>Eat That Frog</b></li>
-                </ol>
+<body class="flex flex-col items-center">
+    <header class="bg-primary d-flex navbar-expand-lg">
+        <div class="container-fluid container">
+            <div class="row position-relative">
+                <div class="col-lg-6 col-sm-4">
+                    <a class="navbar-brand" href="Home.html">
+                        <svg width="35%" class="mt-2" fs-1 version="1.0" viewBox="0 0 361 130"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(0 130) scale(.1 -.1)">
+                                <path
+                                    d="m1020 851v-371h365 365v360 360h-180-179l-3-131-3-130-170 132c-93 72-176 136-182 142-10 7-13-66-13-362z" />
+                                <path d="m1832 858c3-315 5-363 18-363s15 48 18 363c2 358 2 362-18 362s-20-4-18-362z" />
+                                <path
+                                    d="m1952 858 3-363 353-3c193-1 352 0 352 3s-61 86-135 184l-134 179 111 149c61 81 122 163 136 181l24 32h-356-356l2-362z" />
+                                <path
+                                    d="m668 205c-38-63-68-117-68-120s65-5 144-5h145l-70 118c-38 64-73 118-77 119-4 2-37-49-74-112z" />
+                                <path
+                                    d="m1168 205c-38-63-68-117-68-120s119-5 265-5h265v115 115h-59-60l-3-40-3-39-52 39c-28 22-54 40-57 40s-7-51-8-112l-3-113-69 118c-38 64-72 117-75 117s-36-52-73-115z" />
+                                <path
+                                    d="m1780 201v-121h120 120v121 120l-45-33c-25-18-52-37-59-42-10-7-27-1-56 20-90 64-80 72-80-65z" />
+                                <path
+                                    d="m2630 201v-121h355 355v60 60h-30c-30 0-30 1-30 55v55h-60-59l-3-112-3-113-68 118c-38 64-72 117-76 117s-38-53-76-117l-70-118-3 117-3 118-50-40c-58-46-65-47-99-19-14 11-37 29-52 40l-28 20v-120z" />
+                                <path d="m360 196v-116h115 115v115 115h-60-60v-41-41l-42 34c-72 58-68 62-68-66z" />
+                                <path
+                                    d="m882 253c3-54 5-58 26-55s22 0 22-57v-61h60 60v61c0 56 2 61 20 56s20 0 20 54v59h-105-106l3-57z" />
+                                <path d="m1640 195v-115h65 65v115 115h-65-65v-115z" />
+                                <path
+                                    d="m2170 195v-115h116c92 0 114 3 107 13-5 6-24 32-43 56-23 30-31 47-24 57 5 7 24 34 42 59l33 45h-115-116v-115z" />
+                                <path
+                                    d="m2420 195v-115h95 95v39c0 36-3 40-27 44l-28 4 28 2c22 1 27 6 27 26 0 18-5 25-20 25-11 0-20 4-20 9s9 7 20 4c18-5 20 0 20 36v41h-95-95v-115z" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <button class="position-absolute start-50 mt-4 navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i id="nav-button" class="fas fa-bars me-5"></i>
+                </button>
+                <div class="col ml-auto col-sm-4 mt-3">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="fs-4 px-4 nav-link" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-4 fs-4 nav-link" href="Portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-4 fs-4 nav-link" href="AboutMe.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-4 fs-4 nav-link" href="Gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="px-4 fs-4 nav-link" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Favourite Quotes</h2>
-                <ul>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
-                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
-                            blanditiis natus adipisci. Enim?</q></li>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-5 mb-5 px-3">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold mb-4">My Gallery</h1>
+            <h3 class="text-xl font-bold mb-4">Thoughts and Memories</h3>
+            <div class="d-flex">
+                <div class="d-flex justify-content-center align-items-center m-4">
+                    <video controls class="mr-3 w-40" src=""></video>
+                    <p class="p-2"><em>Jim Rohn</em> is one of the best I know on social media. Lorem, ipsum dolor
+                        sit modi, voluptatem. Iste, nemo.</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center m-4">
+                    <p class="p-2">Lorem ipsurepeldus similique, sunt earum aliquid harum nisi rerum? Unde dolorem
+                        sapiente excepturi quia facilis ses et!</p>
+                    <video controls class="ml-3 w-40 md:w-full" src=""></video>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center items-center mt-4">
+            <hr class="w-60 border-primary my-4">
+        </div>
+
+        <section class="row">
+            <div class="col rounded-lg lg:w-1/2">
+                <h2 class="text-xl w-full mb-4">Books</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">The Chimp Paradox</li>
+                    <li class="list-group-item">Focus</li>
+                    <li class="list-group-item">The 5 Second Rule</li>
+                    <li class="list-group-item">Eat That Frog</li>
                 </ul>
             </div>
-        </section>
-        <p class="center-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates optio doloremque
-            quod eum architectos.
-            Impedit unde vel incidunt similique alias voluptates a necessitatibus in, laudantium ratione, voluptate
-            molestias blanditiis consequatur nulla doloribus error. Tenetur ipsum deserunt cum quod</p>
 
-            <div class="last-image">
-                <img src="images/Focus.jfif" width="20%" alt="book-cover">
-                <img src="images/5 seconds.jfif" width="20%" alt="book-cover">
-                <img src="images/Eat that frog.jfif" width="20%" alt="book-cover">
+            <div class="col rounded">
+                <h2 class="text-xl font-bold mb-4">Favourite Quotes</h2>
+                <ul>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
+                            .
+                            Enim</q></li>
+                    <li><q>Lorem ipsum, dolor <span>sit amet consectetrumlor sit</span> amet <span></span>
+                            ectetrum
+                            fugit
+                            sit in quos magni, itaque voluptatibus . Enim</q></li>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugit sit in quos magni, itaque voluptatibus
+                            Enim!</q></li>
+                    <li><q>Lorem ipsum, dolor sit amet consectetrum fugitamet consectetrum fugit sit in quos
+                            magni,
+                            itaque
+                            voluptatibus Enim!!!</q></li>
+                </ul>
             </div>
+
+            <div class="flex justify-center items-center mt-4">
+                <hr class="border-primary  my-4">
+            </div>
+        </section>
+
+        <p class="mt-4 py-5 text-center-">Engaging with the written word, both as a reader and a writer, is a
+            transformative journey that transcends
+            the boundaries of time and space. As a devoted reader, immersing oneself in the pages of a book is akin to
+            embarking on a literary adventure, where the mind traverses landscapes, encounters diverse characters, and
+            delves into the complexities of the human experience. The act of reading is not merely an escape but a
+            profound exploration that nurtures empathy, broadens perspectives, and stimulates intellectual
+            curiosity.Conversely, the transition from avid reader to aspiring writer is a natural evolution fueled by a
+            desire to contribute one's voice to the rich tapestry of literature. Writing becomes a medium for
+            self-expression, a vessel for channeling creativity and imagination onto the blank canvas of a page. Whether
+            penning fiction that transports readers to fantastical realms or crafting non-fiction that explores the
+            intricacies of the world, the writer's journey is an intimate process of self-discovery and communication.
+
+            Both reading and writing, intertwined as
+            essential elements of the literary ecosystem, shape individuals, foster a love for language, and contribute
+            to the perpetuity of human knowledge and creativity. Whether one finds solace in the written words of others
+            or endeavors to create new narratives, the journey of literature is a lifelong odyssey that enriches the
+            soul and leaves an indelible mark on the human spirit</p>
+        <div class="d-flex justify-content-around mt-10">
+            <img src="images/Focus.jfif" width="20%" alt="book-cover">
+            <img src="images/5 seconds.jfif" width="20%" alt="book-cover">
+            <img src="images/Eat that frog.jfif" width="20%" alt="book-cover">
+        </div>
     </main>
-    <footer>
-        <small>Natanim Kemal | 2023</small>
+
+    <footer class="text-center w-100 bg-dark py-2">
+        <small class="text-white">&copy;Natanim Kemal | Dec, 2023</small>
     </footer>
+
 </body>
 
 </html>
